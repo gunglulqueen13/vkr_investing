@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "module": "commonjs",       // важно для Jest
+    "target": "esnext",         // чтобы не ругался на синтаксис
+    "moduleResolution": "node",
+    "types": ["jest", "node"],
+    "allowJs": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.test.ts", "src/**/*.test.tsx"]
+}
